@@ -12,4 +12,4 @@ DBNAME="$2"
 BACKUPPATH="$3"
 
 # Mongo command using command line arguments
-mongodump --uri="${CONNECTIONURI}/${DBNAME}?authSource=admin" --gzip --out $BACKUPPATH
+mongodump --forceTableScan --uri="${CONNECTIONURI}/${DBNAME}?authSource=admin" --gzip --out $BACKUPPATH
