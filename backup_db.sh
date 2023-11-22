@@ -11,5 +11,5 @@ CONNECTIONURI="$1"
 DBNAME="$2"
 BACKUPPATH="$3"
 
-# Docker command using command line arguments
+# Mongo command using command line arguments
 mongodump --uri="${CONNECTIONURI}/${DBNAME}?authSource=admin" --gzip --out $BACKUPPATH
